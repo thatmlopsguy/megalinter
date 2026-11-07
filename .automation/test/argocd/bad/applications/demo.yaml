@@ -1,0 +1,20 @@
+# Dangerous sync policy (R01), prune enabled (R14), no manifest-generate-paths annotation (R06), pinned targetRevision (R19) and no ApplicationSets (R98)
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo
+  namespace: argocd
+spec:
+  project: my-project
+  source:
+    repoURL: https://github.com/example-org/demo.git
+    targetRevision: main
+    path: ./deploy
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: demo
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: true

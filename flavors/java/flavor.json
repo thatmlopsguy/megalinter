@@ -11,6 +11,7 @@
         "ACTION_ZIZMOR",
         "ANSIBLE_ANSIBLE_LINT",
         "API_SPECTRAL",
+        "ARGOCD_OCTODOCTOR",
         "BASH_EXEC",
         "BASH_SHELLCHECK",
         "BASH_SHFMT",

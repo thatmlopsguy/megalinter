@@ -6613,6 +6613,16 @@
         "    $ npmPkgJsonLint . -mw 10",
         ""
     ],
+    "octodoctor": [
+        "Usage of octodoctor:",
+        "  -c, --context string     Kubeconfig context to export from (default: the current context)",
+        "  -d, --directory string   Directory to scan for ArgoCD files (default \".\")",
+        "  -e, --export             Export Argo CD manifests from a live cluster and analyze them",
+        "  -l, --limit int          Limit number of results to display (default 5)",
+        "  -n, --namespace string   Namespace to export Argo CD manifests from (default \"argocd\")",
+        "  -v, --version            Print version information",
+        "pflag: help requested"
+    ],
     "osv-scanner": [
         "",
         "NAME:",

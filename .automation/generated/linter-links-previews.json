@@ -374,6 +374,11 @@
     "image": null,
     "title": "npm-package-json-lint | npm-package-json-lint"
   },
+  "octodoctor": {
+    "description": "OctoDoctor for Argo CD is a static analysis tool for Argo CD configuration. Point it at a directory of YAML manifests and it inspects your Applications, ApplicationSets, AppProjects, and Argo CD ConfigMaps/Secrets, then reports misconfigurations and anti-patterns in your GitOps setup.",
+    "image": null,
+    "title": "OctoDoctor for Argo CD"
+  },
   "osv-scanner": {
     "description": "Use OSV-Scanner to find existing vulnerabilities affecting your project\u2019s dependencies.",
     "image": null,

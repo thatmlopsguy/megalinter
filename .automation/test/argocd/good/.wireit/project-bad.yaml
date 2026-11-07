@@ -1,0 +1,11 @@
+# Poison fixture: excluded directories must never be analyzed.
+# AppProject with a wildcard sourceRepos (rule R05) would fail the analysis.
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: excluded-project
+  namespace: argocd
+spec:
+  description: Must not be analyzed
+  sourceRepos:
+    - "*"

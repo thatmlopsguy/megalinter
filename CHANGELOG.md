@@ -14,6 +14,8 @@ Note: Can be used with `oxsecurity/megalinter@beta` in your GitHub Action mega-l
   - Outside CI, **`PARALLEL_PROCESS_NUMBER`** now defaults to the number of cores minus one, so your machine stays responsive while MegaLinter runs. CI runs still use every core, and setting the variable still overrides the default
 
 - New linters
+  - Add [**octodoctor**](https://octodoctor-argocd.readthedocs.io/) to analyze **Argo CD** Applications, ApplicationSets, AppProjects and settings, detecting misconfigurations, anti-patterns and risky sync policies (descriptor **ARGOCD**, linter **ARGOCD_OCTODOCTOR**)
+    - Failed rules and affected files are listed in the linter log, and the OctoDoctor HTML, JSON and YAML reports are saved in the `octodoctor` folder of the reports directory
 
 - Disabled linters
 
